@@ -62,7 +62,77 @@
         <p class="info-direction">Avenida del Éxito 200, Ciudad Triple Peaks</p>
       </div>
     </header>
-    <main class="content"></main>
-    <footer class="footer"></footer>
+    <main class="content">
+      <p class="reservation-title">Reservar una mesa</p>
+      <form class="reservation">
+        <label for="name-form" class="label-form">Nombre *</label>
+        <input
+          type="text"
+          id="name-form"
+          class="input-form"
+          placeholder="Nombre"
+          required
+        />
+        <label for="number" class="label-form">Número de comensales *</label>
+        <input
+          type="number"
+          id="number"
+          class="input-form"
+          placeholder="1-8"
+          required
+        />
+        <label for="date-form" class="label-form">Fecha y hora *</label>
+        <input type="date" id="date-form" class="input-form" required />
+        <label for="email-form" class="label-form"
+          >Tu correo electrónico *</label
+        >
+        <input
+          type="email"
+          id="email-form"
+          class="input-form"
+          placeholder="email@email.com"
+          required
+        />
+        <button type="submit" class="button-form" disabled>
+          Reservar una mesa
+        </button>
+        <div class="verification">
+          <label class="label-form"
+            ><input type="checkbox" class="verification-checkbox" />Acepto los
+            términos de uso</label
+          >
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img
+          src="./images/icons/logo_coffeeshop_light.svg"
+          class="image-logo"
+          alt=""
+        />
+        <p class="my-name">@2026 Erika Robles</p>
+      </div>
+      <div class="circle"></div>
+      <ul class="social">
+        <li class="social-title">Redes sociales</li>
+        <li class="list">
+          <img
+            src="./images/icons/facebook_white.svg"
+            class="img-list"
+            alt="facebook"
+          /><a href="/">Instagram</a>
+        </li>
+        <li class="list">
+          <img
+            src="./images/icons/instagram_white.svg"
+            class="img-list"
+            alt="instagram"
+          />
+          <a href="/">Instagram</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
